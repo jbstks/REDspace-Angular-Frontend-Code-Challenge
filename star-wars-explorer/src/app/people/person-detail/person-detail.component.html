@@ -1,0 +1,31 @@
+<mat-card *ngIf="person$ | async as person">
+    <mat-card-title>{{ person.name }}</mat-card-title>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item>
+                <div mat-line>Height</div>
+                <div mat-line>{{ person.height }} cm</div>
+            </mat-list-item>
+            <mat-list-item>
+                <div mat-line>Mass</div>
+                <div mat-line>{{ person.mass }} kg</div>
+            </mat-list-item>
+            <mat-list-item>
+                <div mat-line>Hair Color</div>
+                <div mat-line>{{ person['hair_color'] }}</div>
+            </mat-list-item>
+            <mat-list-item>
+                <div mat-line>Skin Color</div>
+                <div mat-line>{{ person['skin_color'] }}</div>
+            </mat-list-item>
+            <mat-list-item>
+                <div mat-line>Gender</div>
+                <div mat-line>{{ person.gender }}</div>
+            </mat-list-item>
+            <mat-list-item>
+                <div mat-line>Birth Year</div>
+                <div mat-line>{{ person['birth_year'] }}</div>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>

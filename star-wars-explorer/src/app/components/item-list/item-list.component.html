@@ -1,0 +1,6 @@
+<mat-nav-list>
+    <a mat-list-item *ngFor="let item of items, index as i" routerLink="details/{{ i+1 }}">
+        {{ item.name || item.title }}
+    </a>
+</mat-nav-list>
+<!-- TODO: add infinite scrolling to get next page of data (future iteration) -->

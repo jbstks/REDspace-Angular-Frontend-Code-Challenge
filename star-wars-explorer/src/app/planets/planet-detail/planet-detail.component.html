@@ -1,0 +1,15 @@
+<mat-card *ngIf="planet$ | async as planet">
+    <mat-card-title>{{ planet.name }}</mat-card-title>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item>
+                <div mat-line>Terrain</div>
+                <div mat-line>{{ planet.terrain }}</div>
+            </mat-list-item>
+            <mat-list-item>
+                <div mat-line>Population</div>
+                <div mat-line>{{ planet.population }}</div>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>

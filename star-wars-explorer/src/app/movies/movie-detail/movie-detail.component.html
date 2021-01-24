@@ -1,0 +1,19 @@
+<mat-card *ngIf="movie$ | async as movie">
+    <mat-card-title>{{ movie.title }}</mat-card-title>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item>
+                <div mat-line>Director</div>
+                <div mat-line>{{ movie.director }}</div>
+            </mat-list-item>
+            <mat-list-item>
+                <div mat-line>Producer(s)</div>
+                <div mat-line>{{ movie.producer }}</div>
+            </mat-list-item>
+            <mat-list-item>
+                <div mat-line>Release Date</div>
+                <div mat-line>{{ movie['release_date'] | date:'longDate' }}</div>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>

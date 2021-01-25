@@ -5,7 +5,7 @@ import { PeopleComponent } from './people.component';
 
 const routes: Routes = [
   { path: '', component: PeopleComponent },
-  { path: 'details', loadChildren: () => import('./person-detail/person-detail.module').then(m => m.PersonDetailModule) },
+  { path: 'details', loadChildren: () => import('./person-detail/person-detail.module').then(m => m.PersonDetailModule) }
 ];
 
 @NgModule({

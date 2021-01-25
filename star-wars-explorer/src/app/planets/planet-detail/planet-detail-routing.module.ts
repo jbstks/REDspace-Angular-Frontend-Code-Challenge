@@ -4,7 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { PlanetDetailComponent } from './planet-detail.component';
 
 const routes: Routes = [
-  { path: ':id', component: PlanetDetailComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: ':id', component: PlanetDetailComponent }
 ];
 
 @NgModule({

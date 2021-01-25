@@ -5,7 +5,7 @@ import { PlanetsComponent } from './planets.component';
 
 const routes: Routes = [
   { path: '', component: PlanetsComponent },
-  { path: 'details', loadChildren: () => import('./planet-detail/planet-detail.module').then(m => m.PlanetDetailModule) },
+  { path: 'details', loadChildren: () => import('./planet-detail/planet-detail.module').then(m => m.PlanetDetailModule) }
 ];
 
 @NgModule({

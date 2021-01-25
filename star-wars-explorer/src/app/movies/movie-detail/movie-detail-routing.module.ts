@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MovieDetailComponent } from './movie-detail.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: ':id', component: MovieDetailComponent }
 ];
 
